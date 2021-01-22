@@ -53,23 +53,86 @@ list  files
 
 ## mkdir
 
-## rm
+1.如何在一个父级目录都没有的目录下创建子目录
+
+`mkdir -p  父目录/子目录`
+
+参数详解:
+
+- `-p` 选项可以创建一个路径上所有不存在的目录
+
+![image-20210122165847194](https://i.loli.net/2021/01/22/5CW8ysquGVkOJHP.png)
 
 ## cp
 
-## mv
+1.如何在拷贝文件后仍保留源文件的权限、时间戳等
 
-## pwd
+`cp -p file1 file2`
 
-## tail
+![image-20210122172105580](https://i.loli.net/2021/01/22/8rOGlnaN1DYz9b6.png)
+
+2.拷贝文件如果目标存在会怎样?
+
+答: 会提示是否覆盖 y是n否
+
+![image-20210122172233043](https://i.loli.net/2021/01/22/29pcYFAbBf8IEtL.png)
+
+## tail&head
+
+1.如何只显示文件最后10行
+
+`tail  filename`
+
+![image-20210122173415267](https://i.loli.net/2021/01/22/kFZxzX2jG5JW3w4.png)
+
+![image-20210122173435037](https://i.loli.net/2021/01/22/yEmiRZ3gtkNBO26.png)
+
+2.如何之查看指定行数的内容？
+
+`tail -n 数字 fliename`
+
+![image-20210122173613261](https://i.loli.net/2021/01/22/UzyPTlLXHw4pO7B.png)
+
+3.如何实时滚动查看文件?
+
+`tail -f filename`
+
+![image-20210122173919054](https://i.loli.net/2021/01/22/iTEpGwWXbvrClLM.png)
+
+参数详解:
+
+- -f 如果有新行添加到文件尾部，它会继续输出新的行
+- -F 当文件删除后又重新创建  依然可以
 
 ## df
 
-## diff
+- 使用 `df -h` 选项可以以更符合阅读习惯的方式显示磁盘使用量。
+
+![image-20210122174731263](https://i.loli.net/2021/01/22/kDGKnfv3OyYMrbs.png)
+
+- 使用 `df -T` 选项显示文件系统类型。
+
+![image-20210122174743793](https://i.loli.net/2021/01/22/ALyxWwJc8MvimHC.png)
 
 ## mount
 
-## find
+1.如何挂载目录?
+
+- 先创建目标目录
+  - 方式一:使用`mount 文件系统目录 目标目录`
+  - 方式二:添加到/etc/fstab文件中
 
 ## less
+
+1.在不加载整个文件的前提下显示文件内容(查看大兴日志用)
+
+`less  filename`
+
+Ctrl+F:向后翻页
+
+Ctrl+B:向前翻页
+
+## find
+
+
 
