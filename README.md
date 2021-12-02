@@ -1,54 +1,29 @@
-# BigData-Notes
-
-
-
-<div align="center"> <img width="444px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/bigdata-notes-icon.png"/> </div>
-<br/>
-
-**大数据入门指南**
-
-
-
-<table>
-    <tr>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/hadoop.jpg"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/hive.jpg"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/spark.jpg"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/storm.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/flink.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/hbase.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/kafka.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/zookeeper.jpg"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/flume.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/sqoop.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/azkaban.png"></th>
-      <th><img width="50px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/scala.jpg"></th>
-    </tr>
-    <tr>
-      <td align="center"><a href="#一hadoop">Hadoop</a></td>
-      <td align="center"><a href="#二hive">Hive</a></td>
-      <td align="center"><a href="#三spark">Spark</a></td>
-      <td align="center"><a href="#四storm">Storm</a></td>
-      <td align="center"><a href="#五flink">Flink</a></td>
-      <td align="center"><a href="#六hbase">HBase</a></td>
-      <td align="center"><a href="#七kafka">Kafka</a></td>
-      <td align="center"><a href="#八zookeeper">Zookeeper</a></td>
-      <td align="center"><a href="#九flume">Flume</a></td>
-      <td align="center"><a href="#十sqoop">Sqoop</a></td>
-      <td align="center"><a href="#十一azkaban">Azkaban</a></td>
-      <td align="center"><a href="#十二scala">Scala</a></td>
-    </tr>
-  </table>
-<br/>
-
-<div align="center">
-	<a href = "https://github.com/heibaiying/Full-Stack-Notes"> 
-	<img width="150px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/weixin.jpg"/> 
-	</a> 
-</div>
-<div align="center"> <strong> 如果需要离线阅读，可以在公众号上发送 “bigdata” 获取《大数据入门指南》离线阅读版！ </strong> </div>
+# BigData-All-Notes
 
 <br/>
+
+**最全的大数据面试文章指南**
+
+**从入门到架构!**
+
+## 目录大纲
+
+| 功能说明       | 主要组件                                         | 了解                                         |
+| -------------- | ------------------------------------------------ | -------------------------------------------- |
+| 数据采集       | Flume、Logstash、Canal                           | Maxwell、Databus、NIFI                       |
+| 数据同步       | DataX、Sqoop、Kettle                             | FlinkX                                       |
+| 数据存储       | HDFS、HBase、Kudu、MongoDB、Elasticsearch、MySql | TiDB、IotDB、                                |
+| 数据计算       | MapReduce、Hive、Spark、 Flink                   | Pig、Storm、Tez                              |
+| 数据中间件     | Kafka、RabbitMQ、Redis、Apache RocketMQ          | Alluxio、ActiveMQ、、Memcached               |
+| OLAP           | ClickHouse、Kylin、Druid、Presto                 | Impala、Hawq、Greenplum、Doris               |
+| 任务调度       | Azkaban、Dolphinscheduler                        | Airflow、Oozie                               |
+| 集群监控       | Grafana、Cloudera Manager                        | Zabbix、Ganglia、Ambari                      |
+| 元数据管理     | Atlas                                            |                                              |
+| 权限管理       | Ranger、Apache Sentry                            |                                              |
+| 数据质量管理   | Griffin                                          |                                              |
+| 集群管理       | k8s、docker                                      |                                              |
+| 数据湖         | Hudi、Iceberg                                    |                                              |
+| 数据可视化、BI | Echarts、Tableau、DataV                          | Superset、QuickBI、Kibana、Metabase、Davinci |
 
 ## :black_nib: 前  言
 
@@ -56,16 +31,23 @@
 2. [大数据技术栈思维导图](notes/大数据技术栈思维导图.md)        
 3. [大数据常用软件安装指南](notes/大数据常用软件安装指南.md)
 
-## 一、Hadoop
+## 一、数据采集
 
-1. [分布式文件存储系统 —— HDFS](notes/Hadoop-HDFS.md)
-2. [分布式计算框架 —— MapReduce](notes/Hadoop-MapReduce.md)
-3. [集群资源管理器 —— YARN](notes/Hadoop-YARN.md)
-4. [Hadoop 单机伪集群环境搭建](notes/installation/Hadoop单机环境搭建.md)
-5. [Hadoop 集群环境搭建](notes/installation/Hadoop集群环境搭建.md)
-6. [HDFS 常用 Shell 命令](notes/HDFS常用Shell命令.md)
-7. [HDFS Java API 的使用](notes/HDFS-Java-API.md)
-8. [基于 Zookeeper 搭建 Hadoop 高可用集群](notes/installation/基于Zookeeper搭建Hadoop高可用集群.md)
+###  Flume
+
+1. [Flume入门及安装教程](notes/flume/flume是什么?.md)
+2. [Flume的运行机制与采集系统结构](https://wuwei.blog.csdn.net/article/details/103395436)
+3. [Flume的多种采集方式](https://wuwei.blog.csdn.net/article/details/103395558)
+4. [Flume实现两个agent级联采集](https://wuwei.blog.csdn.net/article/details/103404996)
+5. [Flume配置高可用Flum-NG配置failover](https://wuwei.blog.csdn.net/article/details/103408860)
+6. [Flume的负载均衡load balancer](https://wuwei.blog.csdn.net/article/details/103409801)
+7. [Flume面试题](https://blog.csdn.net/shujuelin/article/details/89020156?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163844915116780269862546%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=163844915116780269862546&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-89020156.pc_search_mgc_flag&utm_term=flume%E9%9D%A2%E8%AF%95%E9%A2%98&spm=1018.2226.3001.4187)
+
+### Logstash
+
+1. 
+
+### Canal
 
 ## 二、Hive
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.czxy</groupId>
+    <artifactId>day20191108_MapReduce01</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.Hadoop</groupId>
+            <artifactId>Hadoop-client</artifactId>
+            <version>2.6.0-mr1-cdh5.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.Hadoop</groupId>
+            <artifactId>Hadoop-common</artifactId>
+            <version>2.6.0-cdh5.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.Hadoop</groupId>
+            <artifactId>Hadoop-hdfs</artifactId>
+            <version>2.6.0-cdh5.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.Hadoop</groupId>
+            <artifactId>Hadoop-mapreduce-client-core</artifactId>
+            <version>2.6.0-cdh5.14.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+    </dependencies>
+</project>

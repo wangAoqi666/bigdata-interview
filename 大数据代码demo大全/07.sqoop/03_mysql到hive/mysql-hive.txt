@@ -1,0 +1,23 @@
+bin/sqoop import \
+--connect jdbc:mysql://172.16.71.27:3306/babasport \
+--username root \
+--password root \
+--table bbs_product \
+--fields-terminated-by '\t' \
+--delete-target-dir \
+--num-mappers 1 \
+--hive-import \
+--hive-database default \
+--hive-table hive_bbs_product_snappy
+
+参数解释：
+--connect  mysql链接
+--username  用户名
+--password  密码
+--table  需要被同步的表 
+--fields-terminated-by  字段分隔符
+--delete-target-dir  之前有同步的文件已经存在删除掉
+--num-mappers  设置n个map任务并行执行
+--hive-import  将表导入到Hive(如果没有设置，则使用Hive的默认分隔符)
+--hive-database hive数据库
+--hive-table  hive表

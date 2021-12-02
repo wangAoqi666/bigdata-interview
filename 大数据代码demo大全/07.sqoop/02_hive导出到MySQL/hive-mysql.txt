@@ -1,0 +1,18 @@
+导出hive到mysql
+sqoop export \
+--connect jdbc:mysql://localhost/db \
+--username root \
+--password 123456 \
+--table table123 \   
+--export-dir /user/foo/joinresults \   #导出hive表数据存储路径
+--input-fields-terminated-by '|' \  #分隔符
+
+如果导出的数据库是mysql  则可以添加一个 属性  --direct 
+
+参数解释
+--connect mysql链接
+--username  用户名
+--password  密码
+--table 表名
+--export-dir  #导出hive表数据存储路径
+--input-fields-terminated-by  分割符

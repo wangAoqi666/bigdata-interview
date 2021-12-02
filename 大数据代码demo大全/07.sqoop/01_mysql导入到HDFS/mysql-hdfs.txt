@@ -1,0 +1,24 @@
+bin/sqoop import \
+--connect jdbc:mysql://172.16.71.27:3306/babasport \
+--username root \
+--password root \
+--query 'select id, brand_id,name from bbs_product where $CONDITIONS LIMIT 100' \
+--target-dir /user/xuyou/sqoop/imp_bbs_product_sannpy_ \
+--delete-target-dir \
+--num-mappers 1 \
+--compress \
+--compression-codec org.apache.hadoop.io.compress.SnappyCodec \
+--fields-terminated-by '\t'
+
+参数解释:
+bin/sqoop import  导出
+--connect mysql链接地址
+--username 用户名
+--password 密码
+--query 查询语句
+--target-dir HDFS目标存储位置
+--delete-target-dir 之前有同步的文件已经存在删除掉
+--num-mappers n个map任务并行导入
+--compress  启用压缩
+--compression-codec   使用Hadoop编解码器(默认gzip) 
+--fields-terminated 设置字段分隔符
