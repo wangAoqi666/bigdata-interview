@@ -25,11 +25,23 @@
 | 数据湖         | Hudi、Iceberg                                    |                                              |
 | 数据可视化、BI | Echarts、Tableau、DataV                          | Superset、QuickBI、Kibana、Metabase、Davinci |
 
-## :black_nib: 前  言
+## :black_nib: 大数据Demo代码大全
 
-1. [大数据学习路线](notes/大数据学习路线.md)
-2. [大数据技术栈思维导图](notes/大数据技术栈思维导图.md)        
-3. [大数据常用软件安装指南](notes/大数据常用软件安装指南.md)
+1. [JavaHttp爬虫](大数据代码demo大全/00.java爬虫)
+1. [JavaSE](大数据代码demo大全/00.javaSE)
+1. [Hive函数、Spark算子等速查表](大数据代码demo大全/000速查表)
+1. [HDFS_API](大数据代码demo大全/01.HDFS)
+1. [MapReduce_API](大数据代码demo大全/02.MapReduce)
+1. [Hive常用API](大数据代码demo大全/03.Hive)
+1. [Zookeeper常用API](大数据代码demo大全/04.Zookeeper)
+1. [Hbase常用API](大数据代码demo大全/05.HBase)
+1. [Flume常用API如拦截器](大数据代码demo大全/06.Flume)
+1. [Sqoop常用API](大数据代码demo大全/07.sqoop)
+1. [Spark代码Demo](大数据代码demo大全/09.spark)
+1. [Redis常用API](大数据代码demo大全/10.redis)
+1. [kafka常用API](大数据代码demo大全/11.kafka)
+1. [常用shell脚本](大数据代码demo大全/12.shell脚本)
+1. [Flink代码Demo](大数据代码demo大全/13.flink)
 
 ## 一、数据采集
 
@@ -181,15 +193,18 @@
 
 <br>
 
-## :bookmark_tabs: 后  记
+:bookmark_tabs: 后  记
 
 [资料分享与开发工具推荐](notes/资料分享与工具推荐.md)
 
 <br>
 
+
+
 <div align="center">
-	<a href = "https://blog.csdn.net/m0_37809146"> 
-	<img width="200px" src="https://gitee.com/heibaiying/BigData-Notes/raw/master/pictures/blog-logo.png"/> 
+	<a href = "https://blog.csdn.net/weixin_43893397"> 
+	<img width="200px" src="https://gitee.com/wang_ao_qi/images/raw/master/mac_image/202112022057321"/> 
 	</a> 
 </div>
-<div align="center"> <a  href = "https://blog.csdn.net/m0_37809146"> 欢迎关注我的博客：https://blog.csdn.net/m0_37809146</a> </div>
+<div align="center"> <a  href = "https://blog.csdn.net/m0_37809146"> 欢迎添加我的微信</a> </div>
+
